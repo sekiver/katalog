@@ -1,0 +1,153 @@
+/*
+Theme Name  : Portofilo
+Author      : John Doe
+Version     : 1.0
+Licensed    : GPL Themes
+*/
+
+body {
+    background-color: #f1f1f1;
+}
+
+/* Navigation */
+nav {
+    background-color: #0c5555 !important;
+}
+
+nav a {
+    color: #fff !important; 
+}
+
+nav a.nav-link {
+    font-size: 20px;
+    padding: 0 15px !important;
+}
+
+nav a.nav-link:hover,nav a.nav-link.active {
+    color: #35dada !important;
+}
+
+nav a.navbar-brand {
+    font-size: 30px;
+}
+
+nav .navbar-toggler {
+    border: 0;
+    box-shadow: unset;
+}
+
+nav .dropdown-menu {
+    background-color: #05acac; 
+}
+
+nav .dropdown-item:focus,nav .dropdown-item:hover {
+    background-color: #0c5555;
+}
+
+nav .btn-user a { box-shadow: unset !important; }
+
+nav .btn-user .dropdown-menu { 
+    background-color: #05acac; 
+}
+
+nav .btn-user .dropdown-item:focus,nav .btn-user .dropdown-item:hover {
+    background-color: #0c5555;
+}
+
+/* Page */
+#page-wrap { 
+    position: relative;
+    padding: 25px 0;
+}
+
+#page-wrap .page-title h2 { 
+    position: relative;
+    font-family: 'Hind', sans-serif;
+    color: #0c5555;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+#page-wrap .page-title p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #636363;
+}
+
+#page-wrap .page-content {
+    position: relative;
+    padding-top: 15px;
+    min-height: 50vh;
+}
+
+/* Box */
+.box {
+    position: relative;
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.statistik-item .icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.statistik-item .icon i {
+    font-size: 40px;
+}
+
+/* Table */
+table { 
+    position: relative;    
+    border: 1px solid #a3a3a3;
+}
+
+table thead {
+    background-color: #64bbbb;
+}
+
+table tr td,table tr th {
+    border: 1px solid #d3d3d3;
+}
+
+.page-item.active .page-link {
+    background-color: #0c5555;
+    border: 1px solid #0c5555;
+}
+
+/* Product */
+#dtProduct img.thumbnail {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top center;
+    -o-object-position: top center;
+}
+.thumbnail-product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top center;
+    -o-object-position: top center;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    padding: 10px 0;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0c5555;
+    text-align: left;
+    margin: 0;
+}
