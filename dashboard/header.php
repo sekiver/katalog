@@ -36,48 +36,56 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/katalog/dashboard">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="product.php">Data Product</a></li>
-                <li><a class="dropdown-item" href="category.php">Category</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="frm_product.php">Add New</a></li>
-              </ul>
-            </li>            
-            <li class="nav-item">
-              <a class="nav-link" href="slideshow.php">Slideshow</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages.php">Pages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="users.php">Users</a>
-            </li>
-          </ul>
-          <div class="ms-5 dropdown btn-user">
-            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              John Doe
-            </a>
-
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Ganti Password</a></li>
-              <li>
-                <hr class="dropdown-divider">
+        <?php 
+          // Cek Session Login
+          if(isset($_SESSION["login"])){
+        ?>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/katalog/dashboard">Home</a>
               </li>
-              <li><a class="dropdown-item" href="#">Log Out</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="product.php">Data Product</a></li>
+                  <li><a class="dropdown-item" href="category.php">Category</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="frm_product.php">Add New</a></li>
+                </ul>
+              </li>            
+              <li class="nav-item">
+                <a class="nav-link" href="slideshow.php">Slideshow</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages.php">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="users.php">Users</a>
+              </li>
             </ul>
+            <div class="ms-5 dropdown btn-user">
+              <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <?php echo $_SESSION["profile"]["nama"]; ?>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Ganti Password</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
+        <?php
+          }
+          // End Cek Session Login
+        ?>
       </div>
     </nav>
   </header>
