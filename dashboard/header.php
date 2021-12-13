@@ -19,7 +19,7 @@
   <!-- Data Tables -->
   <link rel="stylesheet" href="../assets/plugins/DataTables/css/dataTables.bootstrap5.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../assets/plugins/FontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/plugins/FontAwesome/css/all.min.css">  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
   <!-- jQuery 3.6 -->
@@ -60,7 +60,7 @@
                 <a class="nav-link" href="slideshow.php">Slideshow</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages.php">Pages</a>
+                <a class="nav-link" href="page.php">Pages</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="users.php">Users</a>
