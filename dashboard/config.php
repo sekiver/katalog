@@ -16,11 +16,4 @@ if(isset($_SESSION["login"])){
 // End Cek Login
 
 
-include "../libs/database.php";
-
-$server     = "localhost";
-$user       = "root";
-$password   = "";
-$dbname     = "weckatalog";
-
-$db = new Database($server,$user,$password,$dbname);
+include "../libs/koneksi.php";
