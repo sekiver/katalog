@@ -8,10 +8,22 @@
                 <ul>
                     <li class="has-dropdown">
                         <a href="product.php">Products</a>
+                        <ul class="dropdown">
+                            <?php
+                                $sql = "SELECT * FROM wec_category";
+                                $data = $db->select($sql);
+
+                                foreach($data as $rsCat){
+                            ?>
+                            <li><a href="product.php?cat=<?= $rsCat["id_cat"] ?>"><?= $rsCat["nm_cat"]; ?></a></li>
+                            <?php 
+                                }
+                            ?>
+                        </ul>
                     </li>
                     <li><a href="about.html">About</a></li>
                     <li class="has-dropdown">
-                        <a href="services.html">Services</a>
+                        <a href="services.html">Category</a>
                         <ul class="dropdown">
                             <li><a href="#">Web Design</a></li>
                             <li><a href="#">eCommerce</a></li>

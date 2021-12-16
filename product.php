@@ -30,8 +30,14 @@
 			</div>
 			<div class="row">
 				<?php 
-					// Get Data Product
+					// Get Data Product ALL
 					$sql = "SELECT * FROM wec_product LIMIT 0,9";
+
+					// Filter berdasarkan id_cat
+					if(isset($_GET["cat"])){
+						$sql = "SELECT * FROM wec_product WHERE id_cat=".$_GET["cat"]." LIMIT 0,9";
+					}
+
 					$data = $db->select($sql);
 
 					// Tampilkan Product
