@@ -93,10 +93,11 @@ nav .btn-user .dropdown-item:focus,nav .btn-user .dropdown-item:hover {
 .statistik-item .icon {
     width: 4rem;
     height: 4rem;
+    text-align: right;
 }
 
 .statistik-item .icon i {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 /* Table */
